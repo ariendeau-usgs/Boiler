@@ -1,0 +1,89 @@
+#!/bin/bash
+
+set -o nounset
+showHelp()
+{
+	echo "                Welcome to the BOILER!                    "
+	echo "This is a structure tool. Its a structure boilerplate     " 
+	echo "in a sense. Empty files but a structure to build from     "
+	echo "                                                          "
+	echo "                      OPTIONS                             "
+	echo "--------------------------------------                    "
+	echo "-h : pulls up the help menu                               "
+	echo "-p : create PHP file structure                            "
+	echo "-b : create basic HTML file structure                     "
+	echo "-n : create a NODE MVC file structure                     "
+	echo "--------------------------------------                    "
+	echo "                   HOW TO USE!                            "
+	echo "You must have an option and a directory name.             "
+	echo "                                                          "
+	echo "                !!!!!EXAMPLE!!!!                          "
+	echo "             boiler -p your_dir_name                      "
+	echo "                                                          "
+	echo "This creates the files for a php site in your_dir_name    "
+	echo "                                                          "
+	echo "                                                          "
+}
+createPHP()
+{
+	ARG="$1"
+	if [ ! -z "$ARG" ]; then
+			mkdir $ARG
+			mkdir $ARG/css
+			mkdir $ARG/js
+			mkdir $ARG/js/libs
+			mkdir $ARG/img
+			mkdir $ARG/inc
+			touch $ARG/css/main.css
+			touch $ARG/js/main.js
+			touch $ARG/index.php
+			echo "$ARG PHP boiler was made with directories and files!"
+	fi	
+}
+createHTML()
+{
+	ARG="$1"
+		if [ ! -z "$ARG" ]; then
+			mkdir $ARG
+			mkdir $ARG/css
+			mkdir $ARG/js
+			mkdir $ARG/js/libs
+			mkdir $ARG/img
+			mkdir $ARG/inc
+			touch $ARG/css/main.css
+			touch $ARG/js/main.js
+			touch $ARG/index.html
+			echo "$ARG HTML boiler was made with directories and files!"
+	fi
+}
+createNODE()
+{
+	ARG="$1"
+	if [ ! -z "$ARG" ]; then
+		mkdir $ARG
+		mkdir $ARG/public
+		mkdir $ARG/public/js
+		mkdir $ARG/public/js/libs
+		mkdir $ARG/public/css
+		mkdir $ARG/public/img
+		mkdir $ARG/app
+		mkdir $ARG/app/controllers
+		mkdir $ARG/app/models
+		mkdir $ARG/views
+		touch $ARG/server.js
+		touch $ARG/views/index.html
+		touch $ARG/public/css/main.css
+		touch $ARG/public/js/main.js
+		echo "$ARG NODE boiler was made with directories and files!"
+	fi
+}
+while getopts "hp:b:n:" optionName; do
+case "$optionName" in
+	h) showHelp;;
+	p) createPHP $2;;
+	b) createHTML $2;;
+	n) createNODE $2;;
+	*) showHelp;;
+esac
+shift
+done

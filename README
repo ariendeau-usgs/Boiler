@@ -1,0 +1,21 @@
+		WELCOME TO THE BOILER!                    
+This is a struct`ure tool. Its a structure boilerplate     
+in a sense. Empty files but a structure to build from     
+                                                          
+                      OPTIONS                             
+--------------------------------------                    
+-h : pulls up the help menu                               
+-p : create PHP file structure                            
+-b : create basic HTML file structure                     
+-n : create a NODE MVC file structure                     
+--------------------------------------                    
+                   HOW TO USE!                            
+You must have an option and a directory name.             
+                                                          
+                !!!!!EXAMPLE!!!!                          
+             boiler -p your_dir_name                      
+                                                          
+This creates the files for a php site in your_dir_name    
+                                                          
+                                                          
+
