@@ -52,7 +52,7 @@ createHTML()
 			mkdir $ARG/inc
 			touch $ARG/css/main.css
 			touch $ARG/js/main.js
-			touch $ARG/index.html
+			makeindexhtml > $ARG/index.html
 			echo "$ARG HTML boiler was made with directories and files!"
 	fi
 }
@@ -76,6 +76,21 @@ createNODE()
 		touch $ARG/public/js/main.js
 		echo "$ARG NODE boiler was made with directories and files!"
 	fi
+}
+makeindexhtml(){
+	cat << _EOF_
+<HTML>
+<HEAD>
+	<TITLE>The title of your page</TITLE>
+	<link rel="stylesheet" href="css/main.css"/>
+</HEAD>
+<BODY>
+	Your page content goes here.
+</BODY>
+</HTML>
+_EOF_
+
+
 }
 while getopts "hp:b:n:" optionName; do
 case "$optionName" in
