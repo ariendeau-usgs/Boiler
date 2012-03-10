@@ -13,6 +13,7 @@ showHelp()
 	echo "-p : create PHP file structure                            "
 	echo "-b : create basic HTML file structure                     "
 	echo "-n : create a NODE MVC file structure                     "
+	echo "-n : add jquery 1.7.1 to js/libs/                         "
 	echo "--------------------------------------                    "
 	echo "                   HOW TO USE!                            "
 	echo "You must have an option and a directory name.             "
