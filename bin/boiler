@@ -55,7 +55,7 @@ createHTML()
 			touch $ARG/js/main.js
 			makeindexhtml > $ARG/index.html
 			echo "$ARG HTML boiler was made with directories and files!"
-	fi
+		fi
 }
 createNODE()
 {
@@ -78,14 +78,6 @@ createNODE()
 		echo "$ARG NODE boiler was made with directories and files!"
 	fi
 }
-jquery()
-{
-	arg="$1"
-	if [! -z "$ARG"]; then
-		wget http://code.jquery.com/jquery-1.7.1.min.js
-   	mv jquery-1.7.1.min.js $ARG/js/libs/jquery-1.7.1.js
-	fi
-}
 makeindexhtml()
 {
 	cat << _EOF_
@@ -102,13 +94,12 @@ _EOF_
 
 
 }
-while getopts "hp:b:n:j:" optionName; do
-case "$optionName" in
+while getopts ":h:pbnj:" opt; do
+case "$opt" in
 	h) showHelp;;
 	p) createPHP $2;;
 	b) createHTML $2;;
 	n) createNODE $2;;
-	j) jquery $2;;
 	*) showHelp;;
 esac
 shift
