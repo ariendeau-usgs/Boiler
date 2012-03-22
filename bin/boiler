@@ -9,10 +9,15 @@ showHelp()
 	echo "                                                          "
 	echo "                      OPTIONS                             "
 	echo "--------------------------------------                    "
-	echo "-h | -help : pulls up the help menu                               "
-	echo "-p | -php : create PHP file structure                            "
-	echo "-b | -basic : create basic HTML file structure                     "
-	echo "-n | -node : create a NODE MVC file structure                     "
+	echo "-h | -help : pulls up the help menu                       "
+	echo "-p | -php : create PHP file structure                     "
+	echo "-b | -basic : create basic HTML file structure            "
+	echo "-n | -node : create a NODE MVC file structure             "
+	echo "-h : pulls up the help menu                               "
+	echo "-p : create PHP file structure                            "
+	echo "-b : create basic HTML file structure                     "
+	echo "-n : create a NODE MVC file structure                     "
+	echo "-n : add jquery 1.7.1 to js/libs/                         "
 	echo "--------------------------------------                    "
 	echo "                   HOW TO USE!                            "
 	echo "You must have an option and a directory name.             "
@@ -62,7 +67,7 @@ createHTML()
 			wget -O $ARG/js/libs/backbone.js http://documentcloud.github.com/backbone/backbone-min.js
 			wget -O $ARG/js/libs/jquery-1.7.1.min.js http://code.jquery.com/jquery-1.7.1.min.js
 			echo "$ARG HTML boiler was made with directories and files!"
-	fi
+		fi
 }
 createNODE()
 {
@@ -90,7 +95,8 @@ createNODE()
 		echo "$ARG NODE boiler was made with directories and files!"
 	fi
 }
-makeindexhtml(){
+makeindexhtml()
+{
 	cat << _EOF_
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
