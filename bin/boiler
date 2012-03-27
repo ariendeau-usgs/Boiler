@@ -1,29 +1,7 @@
 #!/bin/bash
 
 set -o nounset
-showHelp()
-{
-	echo "                Welcome to the BOILER!                    "
-	echo "This is a structure tool. Its a structure boilerplate     " 
-	echo "in a sense. Empty files but a structure to build from     "
-	echo "                                                          "
-	echo "                      OPTIONS                             "
-	echo "--------------------------------------                    "
-	echo "-h | -help : pulls up the help menu                       "
-	echo "-p | -php : create PHP file structure                     "
-	echo "-b | -basic : create basic HTML file structure            "
-	echo "-n | -node : create a NODE MVC file structure             "
-	echo "--------------------------------------                    "
-	echo "                   HOW TO USE!                            "
-	echo "You must have an option and a directory name.             "
-	echo "                                                          "
-	echo "                !!!!!EXAMPLE!!!!                          "
-	echo "             boiler -p your_dir_name                      "
-	echo "                                                          "
-	echo "This creates the files for a php site in your_dir_name    "
-	echo "                                                          "
-	echo "                                                          "
-}
+source lib/cmd/help
 createPHP()
 {
 	ARG="$1"
@@ -92,7 +70,7 @@ createNODE()
 }
 makeindexhtml()
 {
-	cat << _EOF_
+cat << _EOF_
 <!doctype html>
 <!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
@@ -136,11 +114,11 @@ cloneH5BPgitREPO(){
 }
 while getopts "h:p:b:n:g:" optionName; do
 case "$optionName" in
-	h|help) showHelp;;
+	h|help) showHelpText;;
 	p|php) createPHP $2;;
 	b|basic) createHTML $2;;
 	n|node) createNODE $2;;
-	*) showHelp;;
+	*) showHelpText;;
 esac
 shift
 done
