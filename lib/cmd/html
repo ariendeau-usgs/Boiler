@@ -1,22 +1,21 @@
-#!/bin/bash
-
-createPHP()
+#!bin/bash
+createHTML()
 {
 	ARG="$1"
-	if [ ! -z "$ARG" ]; then
+		if [ ! -z "$ARG" ]; then
 			mkdir $ARG
 			mkdir $ARG/css
 			mkdir $ARG/js
 			mkdir $ARG/js/libs
 			mkdir $ARG/img
 			mkdir $ARG/inc
-			touch $ARG/css/main.css
+			touch $ARG/css/style.css
 			touch $ARG/js/script.js
-			makeindexhtml > $ARG/style.php
+			makeindexhtml > $ARG/index.html
 			wget -O $ARG/js/libs/modernizr-2.5.3.js http://www.modernizr.com/downloads/modernizr-2.5.3.js
 			wget -O $ARG/js/libs/underscore.js http://documentcloud.github.com/underscore/underscore-min.js
 			wget -O $ARG/js/libs/backbone.js http://documentcloud.github.com/backbone/backbone-min.js
 			wget -O $ARG/js/libs/jquery-1.7.1.min.js http://code.jquery.com/jquery-1.7.1.min.js
-			echo "$ARG PHP boiler was made with directories and files!"
-	fi	
+			echo "$ARG HTML boiler was made with directories and files!"
+		fi
 }
