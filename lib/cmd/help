@@ -1,24 +1,9 @@
 #!/bin/bash
 
 showHelpText(){
-echo >> _EOF_
-                Welcome to the BOILER!                
-This is a structure tool. Its a structure boilerplate  
-in a sense. Empty files but a structure to build from 
-                                                      
-                     OPTIONS
-	--------------------------------------                
-	-h | -help : pulls up the help menu                   
-	-p | -php : create PHP file structure                 
-	-b | -basic : create basic HTML file structure        
-	-n | -node : create a NODE MVC file structure         
-	--------------------------------------                
-                   HOW TO USE!                        
-	You must have an option and a directory name.         
-	                                                      
-                !!!!!EXAMPLE!!!!                      
-             boiler -p your_dir_name                  
-	                                                      
-This creates the files for a php site in your_dir_name                                                      
-	_EOF_
+	echo "Commands:																"
+	echo "	html <project name>: creates an html structure			"
+	echo "	php <project name>: creates an php structure	    		"
+	echo "	node <project name>: creates an node structure			"
+	echo "	help: shows this help screen									"
 }

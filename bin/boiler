@@ -1,21 +1,16 @@
 #!/bin/bash
-
 set -o nounset
-source lib/cmd/*
-
-
-
+source lib/cmd/help
+source lib/cmd/php
 cloneH5BPgitREPO(){
 	ARG="$1"
 	git clone https://github.com/h5bp/html5-boilerplate.git $ARG
 }
-while getopts "h:p:b:n:g:" optionName; do
-case "$optionName" in
-	h|help) showHelpText;;
-	p|php) createPHP $2;;
-	b|basic) createHTML $2;;
-	n|node) createNODE $2;;
-	*) showHelpText;;
+ARG="$1"
+case $ARG in
+	help) showHelpText ;;
+	php) createPHP "$2";;
+	html) createHTML "$2";;
+	node) createNODE "$2";;
 esac
-shift
-done
+
