@@ -1,21 +1,27 @@
-		WELCOME TO THE BOILER!                    
-This is a structure tool. Its a structure boilerplate     
-in a sense. Empty files but a structure to build from     
-                                                          
-                      OPTIONS                             
---------------------------------------                    
--h : pulls up the help menu                               
--p : create PHP file structure                            
--b : create basic HTML file structure                     
--n : create a NODE MVC file structure                     
---------------------------------------                    
-                   HOW TO USE!                            
-You must have an option and a directory name.             
-                                                          
-                !!!!!EXAMPLE!!!!                          
-             boiler -p your_dir_name                      
-                                                          
-This creates the files for a php site in your_dir_name    
-                                                          
-                                                          
+BOILER
+
+**INSTALL SCRIPT STILL BEING BUILT AND TESTED**
+
+Boiler helps start good web practices which is with the structure. 
+It downloads the common used libraries and files for you.
+
+It was built with ruby 1.9.3 but seems to work with the mac 1.8.7.
+Please report and bugs.
+
+Using this is simple. ITS COMMAND LINE BUT ITS A EASY COMMAND LINE!!
+
+boil <type> <project_name>
+
+TYPES:  html
+	PHP
+
+Name your project whatever you want. Enjoy :)
+
+If you need help, you can always type:
+
+boil help.
+
+
+
+Please code responsively.
 
