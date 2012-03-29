@@ -1,9 +1,0 @@
-#!/bin/bash
-
-showHelpText(){
-	echo "Commands:																"
-	echo "	html <project name>: creates an html structure			"
-	echo "	php <project name>: creates an php structure	    		"
-	echo "	node <project name>: creates an node structure			"
-	echo "	help: shows this help screen									"
-}
