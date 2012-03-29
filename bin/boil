@@ -1,0 +1,24 @@
+#!/usr/bin/env ruby
+require 'pathname'
+require 'fileutils'
+BOILER_PATH=File.expand_path(__FILE__)
+BOILER_LIBRARY_PATH = Pathname.new(__FILE__).realpath.dirname.parent.join("Library/Boiler").to_s
+$:.unshift(BOILER_LIBRARY_PATH + '/Resources')
+$:.unshift(BOILER_LIBRARY_PATH)
+require 'global'
+require 'utils'
+require 'cmd/create'
+
+case ARGV.first when 'help', '-h', '-?', '--help', nil
+	require "cmd/help"
+	Boiler.help
+	exit ARGV.first ? 0 : 1
+when 'version', '-v', '--version'
+	puts BOILER_VERSION
+when 'php', '--php', '-p'
+	PROJECT_NAME = ARGV[1]
+	Boiler.createPHP
+when 'html', '--html'
+	PROJECT_NAME = ARGV[1]
+	Boiler.createHTML
+end
