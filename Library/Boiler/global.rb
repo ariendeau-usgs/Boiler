@@ -30,4 +30,5 @@ module Boiler extend self
 		puts "Creating the Backbone library!"
 		Boiler.download("http://documentcloud.github.com/backbone/backbone-min.js", "js/libs/backbone-min.js")
 	end
+
 end

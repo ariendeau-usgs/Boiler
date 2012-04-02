@@ -7,7 +7,7 @@ $:.unshift(BOILER_LIBRARY_PATH + '/Resources')
 $:.unshift(BOILER_LIBRARY_PATH)
 require 'global'
 require 'utils'
-require 'cmd/create'
+
 
 case ARGV.first when 'help', '-h', '-?', '--help', nil
 	require "cmd/help"
@@ -16,11 +16,13 @@ case ARGV.first when 'help', '-h', '-?', '--help', nil
 when 'version', '-v', '--version'
 	puts BOILER_VERSION
 when 'create', '-c', '--create'
+	require 'cmd/create'
 	PROJECT_TYPE = ARGV[1]
 	PROJECT_NAME = ARGV[2]
 	Boiler.create
 when 'serve', '--server'
+	require 'cmd/serve'
 	PROJECT_TYPE = ARGV[1]
 	PROJECT_NAME = ARGV[2]
-	Boiler.createHTML
+	Boiler.serve
 end
