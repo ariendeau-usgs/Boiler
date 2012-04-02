@@ -2,8 +2,8 @@ BOILER_HELP = <<-EOS
     commands:
           help    => shows this help
           version => shows boiler version
-          php     => creates a php boilerplate
-          html    => create a simple html boilerplate
+          create  => creates a php or html boilerplate
+          serve   => download boilerplates and name them
 EOS
 
 module Boiler extend self
