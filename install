@@ -1,0 +1,21 @@
+#!/bin/bash
+#A shell script to install for you installs the boiler script
+
+
+# Defaults to /usr/local
+prefix="/usr/local"
+
+if [ ! -d "$prefix" ]; then
+    # Control will enter here if $DIRECTORY doesn't exist
+	mkdir "/usr/local"
+	mkdir "/usr/local/bin"
+	mkdir "/usr/local/Library"
+fi
+
+#copy the boiler to /usr/local/bin
+cp -r bin/boil $prefix/bin/boil
+
+#copy the Library to /usr/local 
+cp -r Library/Boiler $prefix/Library/Boiler
+
+echo "Now type boil help"
