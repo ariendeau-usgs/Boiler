@@ -15,10 +15,12 @@ case ARGV.first when 'help', '-h', '-?', '--help', nil
 	exit ARGV.first ? 0 : 1
 when 'version', '-v', '--version'
 	puts BOILER_VERSION
-when 'php', '--php', '-p'
-	PROJECT_NAME = ARGV[1]
-	Boiler.createPHP
-when 'html', '--html'
-	PROJECT_NAME = ARGV[1]
+when 'create', '-c', '--create'
+	PROJECT_TYPE = ARGV[1]
+	PROJECT_NAME = ARGV[2]
+	Boiler.create
+when 'serve', '--server'
+	PROJECT_TYPE = ARGV[1]
+	PROJECT_NAME = ARGV[2]
 	Boiler.createHTML
 end

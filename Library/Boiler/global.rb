@@ -8,7 +8,7 @@ module Boiler extend self
 		end
 	end
 	def makeFiles
-		webfiles = ["css/style.css", "js/script.js", ".htaccess", "index.#{ARGV.first}"]
+		webfiles = ["css/style.css", "js/script.js", ".htaccess", "index.#{PROJECT_TYPE}"]
 		webfiles.each do |f|
 			puts "Creating the #{f} file!"
 			FileUtils.touch "#{f}"
