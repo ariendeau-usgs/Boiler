@@ -1,27 +1,24 @@
 BOILER
 
-**INSTALL SCRIPT STILL BEING BUILT AND TESTED**
-
 Boiler helps start good web practices which is with the structure. 
+
+Boiler is for Unix and linux users with Ruby 1.8.7 or higher. Sorry windows. 
+
 It downloads the common used libraries and files for you.
 
-It was built with ruby 1.9.3 but seems to work with the mac 1.8.7.
 Please report and bugs.
 
 Using this is simple. ITS COMMAND LINE BUT ITS A EASY COMMAND LINE!!
 
-boil <type> <project_name>
+    commands:
+          help    => shows this help
+          version => shows boiler version
+          create  => creates a blank php or html boilerplate
+                  => Usage: boil create <type: php or html> <project name>
+          serve   => download boilerplates and name them
+                  => Usage: boil serve <type: h5bp or foundation> <project name>
 
-TYPES:  html
-	PHP
 
 Name your project whatever you want. Enjoy :)
 
-If you need help, you can always type:
-
-boil help.
-
-
-
 Please code responsively.
-
