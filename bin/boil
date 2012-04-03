@@ -15,12 +15,12 @@ case ARGV.first when 'help', '-h', '-?', '--help', nil
 	exit ARGV.first ? 0 : 1
 when 'version', '-v', '--version'
 	puts BOILER_VERSION
-when 'create', '-c', '--create'
+when 'create', '-c', '--create', 'c'
 	require 'cmd/create'
 	PROJECT_TYPE = ARGV[1]
 	PROJECT_NAME = ARGV[2]
 	Boiler.create
-when 'serve', '--server'
+when 'serve', '--server', 's'
 	require 'cmd/serve'
 	PROJECT_TYPE = ARGV[1]
 	PROJECT_NAME = ARGV[2]
