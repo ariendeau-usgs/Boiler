@@ -20,9 +20,13 @@ when 'create', '-c', '--create', 'c'
 	PROJECT_TYPE = ARGV[1]
 	PROJECT_NAME = ARGV[2]
 	Boiler.create
-when 'serve', '--server', 's'
+when 'serve', '--server', 's', '-s'
 	require 'cmd/serve'
 	PROJECT_TYPE = ARGV[1]
 	PROJECT_NAME = ARGV[2]
 	Boiler.serve
+when 'download', '-d', '--download', 'd'
+	require 'cmd/download'
+	PROJECT_TYPE = ARGV[1]
+	Boiler.download
 end
