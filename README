@@ -23,7 +23,9 @@ Using this is simple. ITS COMMAND LINE BUT ITS A EASY COMMAND LINE!!
                   	boil serve <type: h5bp or foundation> <project name>
           download=> download javascript libraries easily
                      Usage:
-                     boil download <libs: modernizr :: jquery :: backbone :: underscore >
+                     	boil download <option>
+                     Options thus far:	
+                     modernizr :: jquery :: backbone :: underscore
 
 Name your project whatever you want. Enjoy :)
 
