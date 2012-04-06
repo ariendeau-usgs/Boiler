@@ -14,7 +14,7 @@ and tools that are used to start and maintain projects.
 
 -------------------------------------------------------------------------------
 COMMANDS:
-_________
+________
 >>          help     => shows help
 >>          version  => shows boiler version
 >>          create   => creates a blank php or html boilerplate
