@@ -28,12 +28,12 @@ Please report and bugs.
 >>                   => Options thus far:
 >>>                       :: h5bp :: foundation ::
 >>          download => download javascript libraries easily
->                      Usage:
+>>                     Usage:
 >>>                       boil download <option>
 >>                   => Options thus far:  
 >>>                       :: modernizr :: jquery :: backbone :: underscore ::
 >>          github   => Common github commands
->                       ::boil github <command>
+>>                       ::boil github <command>
 >>                  => Commands thus far
 >>>                       :: init ::
 >>>>                       ::boil github init <url> ::
