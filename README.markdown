@@ -1,7 +1,7 @@
 BOILER
 ======
 
-ABOUT
+about
 -----
 >Boiler helps start good web practices which is with the structure. 
 
@@ -13,7 +13,7 @@ It is a wrapper for common libraries and tools that are used as web developers
 and tools that are used to start and maintain projects.
 
 -------------------------------------------------------------------------------
-commands:
+COMMANDS:
 _________
 >>          help     => shows help
 >>          version  => shows boiler version
