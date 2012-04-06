@@ -5,7 +5,7 @@
 
 >Boiler helps start good web practices which is with the structure. 
 
-Boiler is for OSX and linux users with Ruby 1.8.7 or higher. Sorry windows. 
+Boiler is for OSX and linux users with Ruby 1.8.7 or higher.
 
 It downloads the common used libraries and files for you.
 
