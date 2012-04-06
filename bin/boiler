@@ -9,10 +9,7 @@ require 'global'
 require 'utils'
 
 
-case ARGV.first when 'help', '-h', '-?', '--help', nil
-	require "cmd/help"
-	Boiler.help
-	exit ARGV.first ? 0 : 1
+case ARGV.first 
 when 'version', '-v', '--version'
 	puts BOILER_VERSION
 when 'create', '-c', '--create', 'c'
@@ -29,4 +26,17 @@ when 'download', '-d', '--download', 'd'
 	require 'cmd/download'
 	PROJECT_TYPE = ARGV[1]
 	Boiler.download
+when 'github', '--github'
+	require 'cmd/github'
+	PROJECT_COM	  = ARGV[1]
+	PROJECT_VAR01 = ARGV[2]
+	PROJECT_VAR02 = ARGV[3]
+	Boiler.github
+when 'help', '-h', '-?', '--help', nil
+	require "cmd/help"
+	PROJECT_COMMAND = ARGV[1]	
+	Boiler.help
+else
+	require "cmd/help"
+	Boiler.help
 end

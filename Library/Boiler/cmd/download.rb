@@ -12,6 +12,9 @@ module Boiler extend self
 		when 'backbone'
 			system('curl -OR http://documentcloud.github.com/backbone/backbone-min.js')
 			puts "Downloaded backbone-min.js"
+		else
+			system "curl -OR #{PROJECT_TYPE}"
+			puts "Downloaded #{PROJECT_TYPE}"
 		end
 	end
 end

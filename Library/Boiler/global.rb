@@ -1,4 +1,4 @@
-BOILER_VERSION = 'VERSION :: .01 [dev]'
+BOILER_VERSION = 'VERSION :: .02 [alpha]'
 module Boiler extend self
 	def makeDirs dirs		
 		dirs.each do |d|

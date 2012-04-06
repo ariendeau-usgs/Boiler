@@ -5,7 +5,20 @@ module Boiler extend self
   			puts "Need a type and a name"
   			return 0
   		elsif ARGV.length >= 2
-        case PROJECT_TYPE when 'php' || 'html' 
+        case PROJECT_TYPE 
+        when 'php' 
+          dirs  = [  "css", "js", "inc", "img", "js/libs"]
+          files = ["css/style.css", "js/script.js", ".htaccess", "index.#{PROJECT_TYPE}"]
+          puts "Creating #{PROJECT_NAME}"
+          FileUtils.mkdir PROJECT_NAME
+          puts "Diving into #{PROJECT_NAME}"
+          FileUtils.cd PROJECT_NAME
+          Boiler.makeDirs dirs
+          Boiler.makeFiles files
+          Boiler.fetchLibs("js/libs")
+          puts "==#{PROJECT_NAME}== has been created!"
+          puts "Please code responsivly :)" 
+        when 'html' 
           dirs  = [  "css", "js", "inc", "img", "js/libs"]
           files = ["css/style.css", "js/script.js", ".htaccess", "index.#{PROJECT_TYPE}"]
           puts "Creating #{PROJECT_NAME}"
