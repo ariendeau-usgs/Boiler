@@ -44,5 +44,5 @@ _________
 
 Name your project whatever you want. Enjoy :)
 
-> Please report and bugs.
+> Please report and bugs.<br/>
 > Please code responsively.
