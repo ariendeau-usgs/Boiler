@@ -1,8 +1,8 @@
 BOILER
 ======
 
-about
------
+## about
+
 >Boiler helps start good web practices which is with the structure. 
 
 Boiler is for Unix and linux users with Ruby 1.8.7 or higher. Sorry windows. 
@@ -13,8 +13,8 @@ It is a wrapper for common libraries and tools that are used as web developers
 and tools that are used to start and maintain projects.
 
 -------------------------------------------------------------------------------
-COMMANDS:
-________
+## COMMANDS:
+
 >>          help     => shows help
 >>          version  => shows boiler version
 >>          create   => creates a blank php or html boilerplate
