@@ -19,26 +19,26 @@ Please report and bugs.
 >>          version  => shows boiler version
 >>          create   => creates a blank php or html boilerplate
 >>                   => Usage: 
->>>                       boil create <type> <project name>
+>>                       boil create <type> <project name>
 >>                   => Options thus far:
->>>                       :: php :: node :: html ::
+>>                       :: php :: node :: html ::
 >>          serve    => download boilerplates and name them
 >>                   => Usage: 
->>>                       boil serve <type> <project name>
+>>                       boil serve <type> <project name>
 >>                   => Options thus far:
->>>                       :: h5bp :: foundation ::
+>>                       :: h5bp :: foundation ::
 >>          download => download javascript libraries easily
 >>                     Usage:
->>>                       boil download <option>
+>>                       boil download <option>
 >>                   => Options thus far:  
->>>                       :: modernizr :: jquery :: backbone :: underscore ::
+>>                       :: modernizr :: jquery :: backbone :: underscore ::
 >>          github   => Common github commands
 >>                       ::boil github <command>
 >>                  => Commands thus far
->>>                       :: init ::
->>>>                       ::boil github init <url> ::
->>>                       :: commit ::
->>>>                       ::boil github commit <message> <branch> ::
+>>                       :: init ::
+>>                       ::boil github init <url> ::
+>>                       :: commit ::
+>>                       ::boil github commit <message> <branch> ::
 -------------------------------------------------------------------------------
 
 Name your project whatever you want. Enjoy :)
