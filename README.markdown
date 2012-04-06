@@ -12,7 +12,8 @@ It downloads the common used libraries and files for you.
 It is a wrapper for common libraries and tools that are used as web developers.
 
 -------------------------------------------------------------------------------
->commands:
+> commands:
+> _________
 >>          help     => shows help
 >>          version  => shows boiler version
 >>          create   => creates a blank php or html boilerplate
@@ -43,5 +44,5 @@ It is a wrapper for common libraries and tools that are used as web developers.
 
 Name your project whatever you want. Enjoy :)
 
->> Please report and bugs.
->> Please code responsively.
+> Please report and bugs.
+> Please code responsively.
