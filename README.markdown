@@ -1,4 +1,4 @@
->BOILER
+BOILER
 ======
 
 ABOUT
@@ -10,8 +10,6 @@ Boiler is for Unix and linux users with Ruby 1.8.7 or higher. Sorry windows.
 It downloads the common used libraries and files for you.
 
 It is a wrapper for common libraries and tools that are used as web developers.
-
-Please report and bugs.
 
 -------------------------------------------------------------------------------
 >commands:
@@ -45,5 +43,5 @@ Please report and bugs.
 
 Name your project whatever you want. Enjoy :)
 
-
-Please code responsively.
+>> Please report and bugs.
+>> Please code responsively.
