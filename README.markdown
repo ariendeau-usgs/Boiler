@@ -11,6 +11,7 @@ It downloads the common used libraries and files for you.
 
 It is a wrapper for common libraries and tools that are used as web developers
 and tools that are used to start and maintain projects.
+<strong>Name your project whatever you want. Enjoy :)</strong>
 
 ## Commands:
 
@@ -40,8 +41,6 @@ and tools that are used to start and maintain projects.
 >                       ::boil github commit <message> <branch> ::
 
 -------------------------------------------------------------------------------
-
-Name your project whatever you want. Enjoy :)
 
 > Please report and bugs.<br/>
 > Please code responsively.
