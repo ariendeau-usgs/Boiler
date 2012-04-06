@@ -1,4 +1,4 @@
-BOILER
+Boiler
 ======
 
 ## About
