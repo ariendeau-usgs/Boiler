@@ -3,13 +3,14 @@ BOILER
 
 ABOUT
 -----
->>Boiler helps start good web practices which is with the structure. 
+>Boiler helps start good web practices which is with the structure. 
 
 Boiler is for Unix and linux users with Ruby 1.8.7 or higher. Sorry windows. 
 
 It downloads the common used libraries and files for you.
 
-It is a wrapper for common libraries and tools that are used as web developers.
+It is a wrapper for common libraries and tools that are used as web developers
+and tools that are used to start and maintain projects.
 
 -------------------------------------------------------------------------------
 commands:
