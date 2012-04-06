@@ -34,7 +34,7 @@ and tools that are used to start and maintain projects.
 >                       :: modernizr :: jquery :: backbone :: underscore ::
 >          github   => Common github commands
 >                       ::boil github <command>
->                  => Commands thus far
+>                   => Commands thus far
 >                       :: init ::
 >                       ::boil github init <url> ::
 >                       :: commit ::
