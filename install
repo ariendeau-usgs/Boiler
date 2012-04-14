@@ -13,9 +13,9 @@ if [ ! -d "$prefix" ]; then
 fi
 
 #copy the boiler to /usr/local/bin
-cp -r bin/boil $prefix/bin/boil
+cp -r bin/boiler $prefix/bin/boiler
 
 #copy the Library to /usr/local 
 cp -r Library/Boiler $prefix/Library/Boiler
 
-echo "Now type boil help"
+echo "Now type boiler help"
